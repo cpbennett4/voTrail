@@ -8,6 +8,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.jsx": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cpbennett4/voTrail.git"
@@ -40,6 +57,10 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
-    "nodemon": "^1.17.3"
+    "husky": "^0.14.3",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.5",
+    "nodemon": "^1.17.3",
+    "prettier": "^1.12.1"
   }
 }
