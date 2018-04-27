@@ -1,2 +1,86 @@
-# voTrail
-A distributed application for volunteers to record their service in the Ethereum blockchain
+* voTrail
+/Personal volunteer service record on Ethereum's blockchain network./
+/To run the client side, install dependencies with npm install.  Run these scripts: 'npm start', 'npm run webpack', then open the app at localhost:8080.
+You will also need to set up your preferred testing environment for the Ethereum Virtual Machine (EVM) (using Gananche or your preferred tool) and ensure port is set to 8545./
+
+** Tech Stack
++ Tech Stack:
+  - Mongo (future release to enable certified entries)
+  - Express
+  - React
+  - Node
+  - Ethereum Network
+
++ Additional technologies:
+  - Web3
+  - Axios
+  - Mongoose
+  - Webpack
+
+** User Stories
++ Sarah: Student, Job Seeker, Big Sister Volunteer
+  - Sarah wants to record her volunteer service for her own records as well as to show potential schools/future scholarship committees/potential employers how she gives her time to those who need it most.
+  - Sarah cares most about
+    1. Showcasing her experiences for future opportunities
+
++ Mrs. Warsaw: Director of Volunteering at Big Brothers Big Sisters of America
+  - Mrs. Warsaw wants a way to vouch for her volunteers' hard work in a verifiable and streamlined manner that can be used to the volunteer's advantage later.
+  - Mrs. Warsaw cares most about
+    1. Verifying procedures used
+    2. Ease of verifying a volunteer's experience
+
++ Dr. Long: Chairman of the National Merit Scholarship Corporation
+  - Dr. Long needs a single place to look at the volunteer history of all applicants and quickly know which services were verified and by who for each applicant.
+  - Dr. Long cares most about
+    1. Verifying procedures used
+    2. Ease of viewing an applicant's voTrail
+
+* Server Endpoints
+** REQUEST
+|--------+---------------------+--------------+--------------------------------------------------------------------|
+| METHOD | URL                 | REQUEST.BODY | EXAMPLE                                                            |
+|--------+---------------------+--------------+--------------------------------------------------------------------|
+| GET    | /                   |              |                                                                    |
+|--------+---------------------+--------------+--------------------------------------------------------------------|
+
+
+** RESPONSE
+|--------+---------------------+--------------+--------------------+-----------+--------------|
+| METHOD | URL                 | SUCCESS TYPE | SUCCESS CONTENT    | FAIL TYPE | FAIL CONTENT |
+|--------+---------------------+--------------+--------------------+-----------+--------------|
+| GET    | /                   | index.html   |                    |           |              |
+|--------+---------------------+--------------+--------------------+-----------+--------------|
+
+* Directory Structure
++ client/
+  - public/
+    - bundle.js
+    - favicon.ico
+    - index.html
+  - src/
+    - components/
+    - containers/
+    - style/
+    - index.jsx
++ contracts
+  - Migrations.sol
+  - VoTrail.sol
++ migrations
+  - 1_initial.migrations.js
+  - 2_deploy_contracts.js
++ node_modules/
++ server
+  - index.js
++ .eslintrc
++ .gitignore
++ .jshintignore
++ .jshintrc
++ .solhint.json
++ CONTRIBUTING.md
++ LICENSE
++ package-lock.json
++ package.json
++ README.md
++ truffle-init.json
++ truffle.js
++ webpack.config.js
