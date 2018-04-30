@@ -50,37 +50,3 @@ You will also need to set up your preferred testing environment for the Ethereum
 |--------+---------------------+--------------+--------------------+-----------+--------------|
 | GET    | /                   | index.html   |                    |           |              |
 |--------+---------------------+--------------+--------------------+-----------+--------------|
-
-* Directory Structure
-+ client/
-  - public/
-    - bundle.js
-    - favicon.ico
-    - index.html
-  - src/
-    - components/
-    - containers/
-    - style/
-    - index.jsx
-+ contracts
-  - Migrations.sol
-  - VoTrail.sol
-+ migrations
-  - 1_initial.migrations.js
-  - 2_deploy_contracts.js
-+ node_modules/
-+ server
-  - index.js
-+ .eslintrc
-+ .gitignore
-+ .jshintignore
-+ .jshintrc
-+ .solhint.json
-+ CONTRIBUTING.md
-+ LICENSE
-+ package-lock.json
-+ package.json
-+ README.md
-+ truffle-init.json
-+ truffle.js
-+ webpack.config.js
